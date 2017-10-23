@@ -1,0 +1,18 @@
+.contend_card{
+    color: black;
+    font-size: large;
+
+}
+
+html{
+    background-color: ghostwhite;
+}
+
+.complete,.cancle{
+    border-radius: 15px;
+
+}
+
+body{
+    margin: 15px;
+}
