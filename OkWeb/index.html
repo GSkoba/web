@@ -3,47 +3,73 @@
 <head>
     <meta charset="utf-8">
     <title>Todos</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://use.fontawesome.com/720f923d2a.js"></script>
 </head>
 <body>
-<div  class="name_of_app">
-        <h4>Todos</h4>
+<div  class="todo-header">
+    <h1 class="todos-title">Todos</h1>
 </div>
-    <div class="contend_card">
-        <div class="input_metod">
-            <button name="select_all_button">
-                <img src="http://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/select-all.png" alt="select all"/></button>
-                <input type="text" placeholder="What needs to be done?" />
+<div class="todos-main">
+    <div class="todos-add">
+        <button class="todo-add_select-all" aria-label="Mark all as done"><i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+        <input class="todo-add_input" placeholder="Add" aria-label="Field add todo" />
+    </div>
+    <div class="todos-list">
+        <div class="todo-item_ready">
+            <input type="checkbox" checked = "checked"
+                   class="todo-item_ready-mark" aria-label="All not done"/>
+            <textarea class="todo-item_text">
+                HMTL
+            </textarea>
+
+            <button class="todo-item_remove" aria-label="Delete todo item"><i class="fa fa-times"></i></button>
         </div>
-        <div class="item_card">
-            <div>
-                <button class="complete"></button>
-                HTML
-                <button class="cancle"><img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/close.png" alt="close" /></button>
-            </div>
-            <div>
-                <button class="complete">
-                    <img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/completed.png" alt="completed"/></button>
-                <del> CSS</del>
-                <button class="cancle"></button>
-            </div>
-            <div>
-                <button class="complete"></button>
+        <div class="todo-item_ready">
+            <input type="checkbox" checked = "checked"
+                   class="todo-item_ready-mark" aria-label="All not done"/>
+            <textarea class="todo-item_text">
+                Java
+            </textarea>
+            <button class="todo-item_remove" aria-label="Delete todo item"><i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="todo-item_ready">
+            <input type="checkbox" checked = "checked"
+                   class="todo-item_ready-mark" aria-label="All not done"/>
+            <textarea class="todo-item_text">
                 JS
-                <button class="cancle"><img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/close.png" alt="close" /></button>
-            </div>
-            <div>
-                <button class="complete"></button>
-                JS Tools
-                <button class="cancle"><img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/close.png" alt="close" /></button>
-            </div>
+            </textarea>
+            <button class="todo-item_remove" aria-label="Delete todo item"><i class="fa fa-times"></i></button>
+        </div>
+        <div class="todo-item_ready">
+            <input type="checkbox" checked = "checked"
+                   class="todo-item_ready-mark" aria-label="All not done"/>
+            <textarea class="todo-item_text">
+                CSS
+            </textarea>
+            <button class="todo-item_remove" aria-label="Delete todo item"><i class="fa fa-times"></i></button>
         </div>
     </div>
-    <div class="control_status_item">
-                3 items left
-            <input type="radio" class = "all"  checked/>All
-            <input type="radio" class="active" />Active
-            <input type="radio" class="what_willbe_done" />Completed
-            <button class="clear_all_button">Clear completed</button>
+    <div class="todos-actions-bar">
+        <div class="todo-actions-bar_counter" aria-label="Count of not done todo">
+            n todo
+        </div>
+        <div class="todo-filters">
+            <button class="todo-filter_active"
+                    aria-label="Filter: show all">
+                All
+            </button>
+            <button class="todos-filter" data-filter="unready"
+                    aria-label="Filter: show completed">
+                Completed
+            </button>
+            <button class="todos-actions-bar_clear-completed">
+                Delete completed
+            </button>
+        </div>
     </div>
+</div>
 </body>
 </html>

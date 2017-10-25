@@ -1,18 +1,43 @@
+.todo-item_remove{
+    display: inline-block;
+    margin: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: white;
+    color: white;
+    background-color: white;
 
-body {
-    background: #f5f5f5;
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #757a92;
 }
 
-button {
-    background: none;
-    border: none;
-    color: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: inherit;
+.todo-item_remove:hover{
+    background-color: transparent;
+    color: darkred;
+
 }
 
+.todo-item_remove:active{
+    background-color: transparent;
+    color: red;
+}
+
+.todo-filter_active, .todos-filter,.todos-actions-bar_clear-completed{
+
+    background-color: #329bd8;
+}
+
+.todo-filter_active, .todos-filter:hover,.todos-actions-bar_clear-completed{
+    background-color: transparent;
+    border: 0.15em #329bd8 solid;
+    color: #329bd8;
+}
+
+.todo-filter_active, .todos-filter:active,.todos-actions-bar_clear-completed{
+    background-color: transparent;
+    border: 0.15em #5e8ca5 solid;
+    color: #5e8ca5;
+}
+
+.fa-times{
+    font-size: 2em;
+}
