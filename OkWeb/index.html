@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Todos</title>
-   
+    <script src="https://use.fontawesome.com/720f923d2a.js"></script>
+    <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
 <div  class="todo-header">
@@ -11,53 +12,56 @@
 </div>
 <div class="todos-main">
     <div class="todos-add">
-        <button class="todo-add_select-all" aria-label="Mark all as done"></button>
+        <button class="todo-add_select-all" aria-label="Mark all as done"><i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
         <input class="todo-add_input" placeholder="Add" aria-label="Field add todo" />
     </div>
     <div class="todos-list">
         <div class="todo-item_ready">
-            <textarea class="todo-item_text">
-                Make cool HMTL
-            </textarea>
             <input type="checkbox" checked = "checked"
                    class="todo-item_ready-mark" aria-label="All not done"/>
-            <button class="todo-item_remove" aria-label="Delete todo item"></button>
+            <textarea class="todo-item_text">
+                HMTL
+            </textarea>
+
+            <button class="todo-item_remove" aria-label="Delete todo item"><i class="fa fa-times"></i></button>
         </div>
         <div class="todo-item_ready">
+            <input type="checkbox" checked = "checked"
+                   class="todo-item_ready-mark" aria-label="All not done"/>
             <textarea class="todo-item_text">
                 Java
             </textarea>
-            <input type="checkbox" checked = "checked"
-                   class="todo-item_ready-mark" aria-label="All not done"/>
-            <button class="todo-item_remove" aria-label="Delete todo item"></button>
+            <button class="todo-item_remove" aria-label="Delete todo item"><i class="fa fa-times"></i>
+            </button>
         </div>
         <div class="todo-item_ready">
+            <input type="checkbox" checked = "checked"
+                   class="todo-item_ready-mark" aria-label="All not done"/>
             <textarea class="todo-item_text">
                 JS
             </textarea>
-            <input type="checkbox" checked = "checked"
-                   class="todo-item_ready-mark" aria-label="All not done"/>
-            <button class="todo-item_remove" aria-label="Delete todo item"></button>
+            <button class="todo-item_remove" aria-label="Delete todo item"><i class="fa fa-times"></i></button>
         </div>
         <div class="todo-item_ready">
+            <input type="checkbox" checked = "checked"
+                   class="todo-item_ready-mark" aria-label="All not done"/>
             <textarea class="todo-item_text">
                 CSS
             </textarea>
-            <input type="checkbox" checked = "checked"
-                   class="todo-item_ready-mark" aria-label="All not done"/>
-            <button class="todo-item_remove" aria-label="Delete todo item"></button>
+            <button class="todo-item_remove" aria-label="Delete todo item"><i class="fa fa-times"></i></button>
         </div>
     </div>
     <div class="todos-actions-bar">
         <div class="todo-actions-bar_counter" aria-label="Count of not done todo">
-            n todo
+            4 item left
         </div>
-        <div class="todo-filters">
-            <button class="todo-filter _active" data-filter = "all"
+        <div class="todo-filters" >
+            <button class="todo-filter_active"
                     aria-label="Filter: show all">
                 All
             </button>
-            <button class="todos-filter" data-filter="unready"
+            <button class="todos-filter"
                     aria-label="Filter: show completed">
                 Completed
             </button>
