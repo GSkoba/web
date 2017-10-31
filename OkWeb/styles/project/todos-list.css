@@ -1,0 +1,76 @@
+.todos-list{
+
+}
+
+    .todos-list:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .todos-item{
+        display: block;
+        margin: 0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .todos-item:first-child{
+        border-top: 1px solid #e6e6e6;
+    }
+        .todo-item_ready-mark-conteiner{
+            width: 64px;
+            height: 64px;
+            background: none;
+            float: left;
+            position: relative;
+        }
+        .todo-item_ready-mark{
+            background: #ffffff;
+            border: 1px solid #d6d6d6;
+            position: absolute;
+            margin: 14px;
+            width: 36px;
+            height: 36px;
+            border-radius: 36px;
+            -webkit-appearance: none;
+        }
+
+        .todo-item_ready-mark:checked{
+            border: 1px solid #65c5b3;
+            content: url("/img/icons/completed.png");
+        }
+
+        .todo-item_text{
+            overflow: hidden;
+            border: 0;
+            background: none;
+            width: 77%;
+            height: 40px;
+            font-size: 24px;
+            font-weight: 200;
+            text-align: left;
+            color: #666666;
+            outline: none;
+            padding-right: 20px;
+            padding-top: 20px;
+            resize: none;
+
+        }
+
+        .todos-add-icon-remove{
+            margin: 20px 0 20px 7px;
+            width: 17px;
+            height: 17px;
+
+        }
+
+        .todo-item_remove{
+            position: absolute;
+            width: 41px;
+            height: 64px;
+            margin: 0;
+            background: none;
+            border: none;
+        }
+
+
