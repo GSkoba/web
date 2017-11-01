@@ -1,0 +1,17 @@
+.todo-actions-bar_counter{
+
+}
+    .todo-actions-bar_counter{
+        margin: 10px;
+        float: left;
+        display: block;
+        color: #cccccc;
+    }
+
+    .todos-filter{
+        margin: 10px;
+    }
+
+    .todos-actions-bar_clear-completed{
+
+    }
