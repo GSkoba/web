@@ -9,14 +9,13 @@
     }
 
     .todos-item{
-        display: block;
+
         margin: 0;
         border-bottom: 1px solid #e6e6e6;
     }
 
-    .todos-item:hover{
-        background-color: #fafafa;
-    }
+
+
 
     .todos-item:first-child{
         border-top: 1px solid #e6e6e6;
@@ -43,8 +42,9 @@
         .todo-item_ready-mark:checked{
             border: 1px solid #65c5b3;
             position: absolute;
-            background: url("/img/icons/completed.png") no-repeat;
+            background: url('../../img/icons/completed.png') no-repeat;
             cursor: pointer;
+            background-position: center;
         }
 
         .todo-item_text{
@@ -65,21 +65,29 @@
 
         }
 
-        .todos-add-icon-remove{
-            margin: 20px 0 20px 7px;
-            width: 17px;
-            height: 17px;
-
-        }
-
         .todo-item_remove{
             cursor: pointer;
             position: absolute;
             width: 41px;
             height: 64px;
             margin: 0;
-            background: none;
             border: none;
+            background: none;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
         }
+
+.todos-item:hover{
+    background-color: #fafafa;
+}
+
+ .todos-item:hover .todo-item_remove{
+     -webkit-transition: none;
+     transition: none;
+     background: url('../../img/icons/close.png') no-repeat;
+     background-size: 18px 18px ;
+     background-position: center;
+}
+
 
 
