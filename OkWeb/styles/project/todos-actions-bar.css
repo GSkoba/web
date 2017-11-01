@@ -1,17 +1,65 @@
+textarea{
+
+}
 .todo-actions-bar_counter{
 
 }
     .todo-actions-bar_counter{
-        margin: 10px;
+        margin: 16px 116px 0 12px;
         float: left;
         display: block;
-        color: #cccccc;
+        color: #888888;
     }
 
-    .todos-filter{
-        margin: 10px;
+    .todo-filters{
+        margin-left: auto;
+        width: 448px;
+        height: 40px;
+        border: none;
+        color: #888888;
     }
 
-    .todos-actions-bar_clear-completed{
-
+    .todo-filter_all{
+        position: relative;
+        margin: 11px 12px 0 0;
+        background: none;
+        border-radius: 15%;
+        cursor: pointer;
+        border: none;
+        -webkit-animation: none;
+        -webkit-appearance: none;
     }
+
+
+        .todo-filter_active{
+            position: relative;
+            margin: 11px 12px 0 0;
+            background: none;
+            border-radius: 15%;
+            cursor: pointer;
+            border: none;
+            -webkit-animation: none;
+            -webkit-appearance: none;
+        }
+
+        .todos-filter_complited{
+            position: relative;
+            margin: 11px 46px 0 0;
+            background: none;
+            border-radius: 15%;
+            cursor: pointer;
+            border: none;
+            -webkit-animation: none;
+            -webkit-appearance: none;
+        }
+
+        .todos-actions-bar_clear-completed{
+            position: relative;
+            margin: 11px 11px 0 0;
+            background: none;
+            border-radius: 15%;
+            cursor: pointer;
+            border: none;
+            -webkit-animation: none;
+            -webkit-appearance: none;
+        }
